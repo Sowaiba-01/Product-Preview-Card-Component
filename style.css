@@ -1,0 +1,262 @@
+*
+{
+    padding: 0%;
+    margin: 0%;
+}
+body
+{
+    background-color: var(--Cream);
+}
+main
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; 
+    min-height: 95vh;
+}
+div.card
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 2em;
+}
+img.perfume_1
+{
+    height: 28em;
+    border-radius: 13px 0px 0px 13px;
+    overflow: hidden;
+}
+div.container
+{
+    background-color: var(--White);
+    border-radius: 0px 13px 13px 0px;
+    max-width:17.5em;
+    height: 28em;
+    padding-left: 25px;
+    overflow: hidden;
+}
+:root
+{
+    --Darkcyan: hsl(158, 36%, 37%);
+--Cream: hsl(30, 38%, 92%);
+--Verydarkblue: hsl(212, 21%, 14%);
+--Darkgrayishblue: hsl(228, 12%, 48%);
+--White: hsl(0, 0%, 100%);
+}
+h1
+{
+    font-family: 'Fraunces', serif;
+    padding-right: 2.3em;
+    color: var(--Verydarkblue);
+    padding-top: 15px;
+    line-height: 30px;
+}
+p
+{
+    font-family: 'Montserrat', sans-serif;
+}
+p.paragraph
+{
+    color: var(--Darkgrayishblue);
+    font-size: 14px;
+    line-height: 1.7;
+    margin-right: 4.5em;
+    font-weight: 600;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+p.perfume
+{
+    letter-spacing: 4px;
+    color: var(--Verydarkblue);
+    padding-top: 29px;
+    font-size: 12px;
+    font-weight: 900;
+   
+}
+p.currentPrice
+{
+    color: var(--Darkcyan);
+    font-weight: 900;
+    font-size: 31px;
+    display: inline;
+    font-family: 'Fraunces', serif;
+}
+p.oldPrice
+{
+    font-family: 'Fraunces', serif;
+    color: var(--Darkgrayishblue);
+    text-decoration: line-through;
+    font-size: 1em;
+}
+button
+{
+    color: var(--White);
+    background-color: var(--Darkcyan);
+    padding: 1em 2em 1em 2em;
+    border: none;
+    border-radius: 5px;
+    max-width: 26em;
+    cursor: pointer;
+    width: 17em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div.prices
+{
+    font-family: 'Fraunces', serif;
+    margin: 1.5em 0 1.5em 0;
+    display: flex;
+    flex-direction: row;
+    gap: 1.5em;
+    justify-content: flex-start;
+    align-items: center;
+}
+span
+{
+    padding-left: 6px;
+    bottom: 5px;
+}
+button:hover
+{
+    background-color: hsl(158, 48%, 24%);
+    transition: 1s ease;
+}
+footer>p
+{
+    color: var(--Darkgrayishblue);
+    font-family: 'Fraunces', serif;
+    text-align: center;
+    font-size: 0.87em;
+}
+
+a{
+    color: var(--Darkcyan);  
+}
+@media screen and (max-width:666px){
+    div.card
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    
+}
+img.perfume_1
+{
+    border-radius: 13px 13px 0px 0px;
+    width: 24em;
+    object-fit: cover;
+    height: 23em;
+}
+
+div.container
+{
+    max-width: 24em;
+    border-radius: 0px 0px 13px 13px;
+    padding: 0%;
+    height: 25em;
+}
+h1,p.currentPrice
+{
+    margin-left: 0.5em; 
+}
+p,button
+{
+    margin-left: 1.5em;
+}
+button
+{
+    width: 26em;
+}
+}
+@media screen and (max-width:400px){
+    div.card
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    margin: 1em;
+}
+img.perfume_1
+{
+    border-radius: 13px 13px 0px 0px;
+    width: 21em;
+    object-fit: cover;
+    height: 16em;
+}
+
+div.container
+{
+    
+    width: 21em;
+    border-radius: 0px 0px 13px 13px;
+    padding: 0%;
+    height: 26em;
+}
+h1,p.currentPrice
+{
+    margin-left: 0.5em; 
+}
+p,button
+{
+    margin-left: 1.5em;
+}
+button
+{
+    width: 21em;
+}
+}
+@media screen and (max-width:280px){
+    div.card
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    margin: 1em;
+}
+img.perfume_1
+{
+    border-radius: 13px 13px 0px 0px;
+    width: 16em;
+    object-fit: cover;
+    height: 14em;
+}
+
+div.container
+{
+    
+    width: 16em;
+    border-radius: 0px 0px 13px 13px;
+    padding: 0%;
+    height: 25em;
+}
+h1
+{
+    padding-right: 0%;
+}
+p.paragraph
+{
+    
+    margin-right: 0%;
+}
+h1,p.currentPrice
+{
+    margin-left: 0.5em; 
+}
+p,button
+{
+    margin-left: 1.5em;
+}
+button
+{
+    width: 16em;
+}
+}
+
